@@ -2,6 +2,7 @@ package com.example.splashscreen;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,6 +19,9 @@ public class SpashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spash_screen);
 
+        // ignore dark mode
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
         // remove statusBar
         View decorView = getWindow().getDecorView();
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
@@ -33,6 +37,6 @@ public class SpashScreen extends AppCompatActivity {
                 startActivity(mainActivity);
                 finish();
             }
-        },5000); // 5 segundos de delay para a proxima pagina
+        },50000000); // 5 segundos de delay para a proxima pagina
     }
 }

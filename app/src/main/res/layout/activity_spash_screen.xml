@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SpashScreen"
-    android:background="@color/white">
+    android:background="@color/white" >
 
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="331dp"
         android:src="@drawable/people"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-2dp" />
+        tools:layout_editor_absoluteX="-2dp"/>
 
     <ImageView
         android:id="@+id/imageView"
