@@ -37,6 +37,6 @@ public class SpashScreen extends AppCompatActivity {
                 startActivity(mainActivity);
                 finish();
             }
-        },50000000); // 5 segundos de delay para a proxima pagina
+        },5000); // 5 segundos de delay para a proxima pagina
     }
 }
